@@ -3,7 +3,7 @@ import json
 import re
 from datetime import datetime
 
-from .config import CATEGORY_LABELS, DISCLAIMER, GOALS
+from config import CATEGORY_LABELS, DISCLAIMER, GOALS
 
 LIST_KEYS = ["top_priorities", "budget_recommendations", "savings_strategy", "next_month_action_plan"]
 
