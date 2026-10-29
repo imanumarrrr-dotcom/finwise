@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 
-from src.cache_manager import cache_info, clear_cache, configure_cache
+from cache_manager import cache_info, clear_cache, configure_cache
 from src.chains import (build_analysis_chain, build_llm, message_demo, run_analysis, stream_chat,
                         stream_recommendations, validate_key)
 from src.config import (ACCENTS, APP_ICON, APP_NAME, CACHE_OPTIONS, CATEGORY_ICONS, CATEGORY_LABELS, CURRENCIES,
