@@ -7,8 +7,8 @@ import json
 
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, PromptTemplate
 
-from .config import CATEGORY_LABELS, GOALS
-from .utils import fmt_money
+from config import CATEGORY_LABELS, GOALS
+from utils import fmt_money
 
 # ---- System prompt (role + safety) ----------------------------------------
 SYSTEM_PROMPT = """You are FinWise AI, an educational personal-finance assistant inside a classroom FinTech prototype.
