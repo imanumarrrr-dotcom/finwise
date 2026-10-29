@@ -9,15 +9,20 @@ import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 
 from cache_manager import cache_info, clear_cache, configure_cache
-from src.chains import (build_analysis_chain, build_llm, message_demo, run_analysis, stream_chat,
-                        stream_recommendations, validate_key)
-from src.config import (ACCENTS, APP_ICON, APP_NAME, CACHE_OPTIONS, CATEGORY_ICONS, CATEGORY_LABELS, CURRENCIES,
-                        DEFAULT_MODEL, DISCLAIMER, EXPENSE_CATEGORIES, GOALS, LANGUAGES, MODEL_OPTIONS,
-                        SCENARIOS, TAGLINE, env_api_key)
-from src.financial_calculator import calculate_financials
-from src.prompts import FINANCIAL_PROMPT, build_inputs
-from src.theme import inject_css, plotly_layout
-from src.utils import fmt_money, parse_analysis, report_markdown
+from chains import (
+    build_analysis_chain, build_llm, message_demo, run_analysis, stream_chat,
+    stream_recommendations, validate_key
+)
+from config import (
+    ACCENTS, APP_ICON, APP_NAME, CACHE_OPTIONS, CATEGORY_ICONS, CATEGORY_LABELS, CURRENCIES,
+    DEFAULT_MODEL, DISCLAIMER, EXPENSE_CATEGORIES, GOALS, LANGUAGES, MODEL_OPTIONS,
+    SCENARIOS, TAGLINE, env_api_key
+)
+from financial_calculator import calculate_financials
+from prompts import FINANCIAL_PROMPT, build_inputs
+from theme import inject_css, plotly_layout
+from utils import fmt_money, parse_analysis, report_markdown
+
 
 st.set_page_config(page_title=f"{APP_NAME} — AI Budget Assistant", page_icon=APP_ICON, layout="wide")
 
