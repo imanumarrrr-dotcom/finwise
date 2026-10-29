@@ -6,7 +6,7 @@ from __future__ import annotations
 
 from typing import Dict
 
-from .config import DEBT_KEY, NEEDS_KEYS, WANTS_KEYS
+from config import DEBT_KEY, NEEDS_KEYS, WANTS_KEYS
 
 
 def safe_div(numerator: float, denominator: float, default=0.0):
